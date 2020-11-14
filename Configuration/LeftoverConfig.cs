@@ -10,6 +10,10 @@ namespace SilK.ConsumeableLeftovers.Configuration
         [XmlAttribute]
         public ushort LeftoverId { get; set; }
 
+        public LeftoverConfig() : this(0, 0)
+        {
+        }
+
         public LeftoverConfig(ushort id, ushort leftoverId)
         {
             Id = id;
